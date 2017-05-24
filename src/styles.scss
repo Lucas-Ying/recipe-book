@@ -1,1 +1,87 @@
-/* You can add global styles to this file, and also import other style files */
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+
+html {
+  font-family: 'Roboto',sans-serif;
+  font-size: 14px;
+  overflow-y: scroll;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 100%;
+}
+
+body {
+  color: #555;
+  background-color: #fff;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+}
+
+.row-reverse {
+  display: flex;
+  flex-direction: row-reverse;
+  box-sizing: border-box;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.column-reverse {
+  display: flex;
+  flex-direction: column-reverse;
+  box-sizing: border-box;
+}
+
+.col-1 {
+  flex:1 1 auto;
+}
+
+.row .col-2 {
+  flex:2 2 auto;
+}
+
+.col-3 {
+  flex:3 3 auto;
+}
+
+.col-4 {
+  flex:4 4 auto;
+}
+
+.col-5 {
+  flex:5 5 auto;
+}
+
+.col-6 {
+  flex:6 6 auto;
+}
+
+.col-7 {
+  flex:7 7 auto;
+}
+
+.col-8 {
+  flex:8 8 auto;
+}
+
+.col-9 {
+  flex:9 9 auto;
+}
+
+.col-10 {
+  flex:10 10 auto;
+}
+
+.col-11 {
+  flex:11 11 auto;
+}
+
+.col-12 {
+  flex:12 12 auto;
+}
