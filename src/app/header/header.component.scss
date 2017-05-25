@@ -1,0 +1,20 @@
+//================  parameters  ==================
+$navbar-font-size: 16px;
+
+.navbar {
+  font-size: $navbar-font-size;
+  text-align: center;
+}
+
+.navbar .mat-button {
+  font-size: $navbar-font-size;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.align-right {
+  margin-left: auto;
+}

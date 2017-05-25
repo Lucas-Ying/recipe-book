@@ -1,3 +1,12 @@
-<p>
-  header works!
-</p>
+<md-toolbar color="primary" class="navbar">
+  <a href="#" md-button>Recipe Book</a>
+  <a href="#" md-button>Recipes</a>
+  <a href="#" md-button>Shopping List</a>
+  <button md-icon-button [mdMenuTriggerFor]="manage" class="align-right">
+    <md-icon>more_vert</md-icon>
+  </button>
+  <md-menu #manage="mdMenu">
+    <a href="#" md-menu-item>Item 1</a>
+    <a href="#" md-menu-item>Item 2</a>
+  </md-menu>
+</md-toolbar>

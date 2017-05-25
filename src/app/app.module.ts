@@ -6,7 +6,8 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MdButtonModule, MdInputModule } from '@angular/material';
+import { MaterialModule } from '@angular/material';
+
 import { HeaderComponent } from './header/header.component';
 import { RecipesComponent } from './recipes/recipes.component';
 import { RecipeListComponent } from './recipes/recipe-list/recipe-list.component';
@@ -31,8 +32,7 @@ import { ShoppingEditComponent } from './shopping-list/shopping-edit/shopping-ed
     FormsModule,
     HttpModule,
     BrowserAnimationsModule,
-    MdButtonModule,
-    MdInputModule
+    MaterialModule
   ],
   providers: [],
   bootstrap: [AppComponent]
