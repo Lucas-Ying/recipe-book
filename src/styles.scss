@@ -24,74 +24,78 @@ body {
   background-color: #fff;
 }
 
+.container {
+  display: block;
+}
+
 .row {
   display: flex;
-  flex-direction: row;
+  flex-flow:row;
   box-sizing: border-box;
 }
 
 .row-reverse {
   display: flex;
-  flex-direction: row-reverse;
+  flex-flow: row-reverse;
   box-sizing: border-box;
 }
 
 .column {
   display: flex;
-  flex-direction: column;
+  flex-flow: column;
   box-sizing: border-box;
 }
 
 .column-reverse {
   display: flex;
-  flex-direction: column-reverse;
+  flex-flow: column-reverse;
   box-sizing: border-box;
 }
 
 .col-1 {
-  flex:1 1 auto;
+  flex:1;
 }
 
 .col-2 {
-  flex:2 2 auto;
+  flex:2;
 }
 
 .col-3 {
-  flex:3 3 auto;
+  flex:3;
 }
 
 .col-4 {
-  flex:4 4 auto;
+  flex:4;
 }
 
 .col-5 {
-  flex:5 5 auto;
+  flex:5;
 }
 
 .col-6 {
-  flex:6 6 auto;
+  flex:6;
 }
 
 .col-7 {
-  flex:7 7 auto;
+  flex:7;
 }
 
 .col-8 {
-  flex:8 8 auto;
+  flex:8;
 }
 
 .col-9 {
-  flex:9 9 auto;
+  flex:9;
 }
 
 .col-10 {
-  flex:10 10 auto;
+  flex:10;
 }
 
 .col-11 {
-  flex:11 11 auto;
+  flex:11;
 }
 
 .col-12 {
-  flex:12 12 auto;
+  flex:12;
 }

@@ -1,3 +1,30 @@
-<p>
-  recipe-detail works!
-</p>
+<div class="row">
+  <div class="col-12">
+    <img src="" alt="">
+  </div>
+</div>
+<div class="row">
+  <div class="col-12">
+    <h1>Recipe Name</h1>
+  </div>
+</div>
+<div class="row">
+  <div class="col-12">
+    <button md-button [mdMenuTriggerFor]="manage">Manage Recipe</button>
+    <md-menu #manage="mdMenu">
+      <a href="#" md-menu-item>To Shopping List</a>
+      <a href="#" md-menu-item>Edit Recipe</a>
+      <a href="#" md-menu-item>Delete Recipe</a>
+    </md-menu>
+  </div>
+</div>
+<div class="row">
+  <div class="col-12">
+    Description
+  </div>
+</div>
+<div class="row">
+  <div class="col-12">
+    Ingredients
+  </div>
+</div>

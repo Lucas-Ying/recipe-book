@@ -1,18 +1,16 @@
 <div class="row">
-  <div class="col-12">
     <button md-button>New Recipe</button>
-  </div>
 </div>
 <hr>
 <div class="row">
-  <md-list class="col-12">
+  <md-list>
     <md-list-item *ngFor="let recipe of recipes">
       <a md-line href="#"><h3>{{ recipe.name }}</h3></a>
       <p md-line>{{ recipe.description }}</p>
       <p md-line>{{ recipe.description }}</p>
       <p md-line>{{ recipe.description }}</p>
       <img [src]="recipe.imagePath"
-           alt="{{ recipe.name }}" style="max-height: 200px; margin: 20%;">
+           alt="{{ recipe.name }}" style="max-height: 100px; max-width: 160px; margin: 20px;">
     </md-list-item>
     <app-recipe-item></app-recipe-item>
   </md-list>
