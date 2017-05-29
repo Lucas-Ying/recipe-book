@@ -10,8 +10,6 @@ import { Recipe } from '../recipe-model';
 export class RecipeListComponent implements OnInit {
   recipes: Recipe[] = [
     new Recipe('A Test Recipe', 'This is a test', 'http://www.lucasying.com/content/images/2017/05/wallpaper7.jpg'),
-    new Recipe('A Test Recipe', 'This is a test', 'http://www.lucasying.com/content/images/2017/05/wallpaper7.jpg'),
-    new Recipe('A Test Recipe', 'This is a test', 'http://www.lucasying.com/content/images/2017/05/wallpaper7.jpg')
   ];
 
   constructor() { }
@@ -19,6 +17,8 @@ export class RecipeListComponent implements OnInit {
   ngOnInit() {
   }
 
-
+  onAddRecipe() {
+    this.recipes.push(new Recipe('A Test Recipe', 'This is a test', 'http://www.lucasying.com/content/images/2017/05/wallpaper7.jpg'));
+  }
 
 }

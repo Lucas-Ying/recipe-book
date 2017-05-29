@@ -1,17 +1,18 @@
-<div class="row">
-    <button md-button>New Recipe</button>
-</div>
-<hr>
-<div class="row">
-  <md-list>
-    <md-list-item *ngFor="let recipe of recipes">
-      <a md-line href="#"><h3>{{ recipe.name }}</h3></a>
-      <p md-line>{{ recipe.description }}</p>
-      <p md-line>{{ recipe.description }}</p>
-      <p md-line>{{ recipe.description }}</p>
-      <img [src]="recipe.imagePath"
-           alt="{{ recipe.name }}" style="max-height: 100px; max-width: 160px; margin: 20px;">
-    </md-list-item>
-    <app-recipe-item></app-recipe-item>
-  </md-list>
+<div class="container">
+  <div class="row">
+    <button md-button color="primary" class="primary-button" (click)="onAddRecipe()">New Recipe</button>
+  </div>
+  <hr>
+  <div class="row">
+    <md-list>
+      <md-list-item *ngFor="let recipe of recipes" class="list-item mat-elevation-z6">
+        <a md-line href="#"><h3>{{ recipe.name }}</h3></a>
+        <p md-line>{{ recipe.description }} {{ recipe.description }} {{ recipe.description }}</p>
+        <img [src]="recipe.imagePath"
+             alt="{{ recipe.name }}" class="list-cover">
+      </md-list-item>
+      <app-recipe-item></app-recipe-item>
+    </md-list>
+  </div>
+
 </div>

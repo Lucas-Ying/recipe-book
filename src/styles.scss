@@ -4,8 +4,8 @@
 
 @include mat-core();
 $recipe-book-primary: mat-palette($mat-blue, A200);
-$recipe-book-accent:  mat-palette($mat-cyan, A100);
-$recipe-book-warn:    mat-palette($mat-red, A100);
+$recipe-book-accent:  mat-palette($mat-orange, A200);
+$recipe-book-warn:    mat-palette($mat-deep-orange, A200);
 $recipe-book-theme: mat-light-theme($recipe-book-primary, $recipe-book-accent, $recipe-book-warn);
 @include angular-material-theme($recipe-book-theme);
 
@@ -22,7 +22,9 @@ html {
 body {
   color: #555;
   background-color: #fff;
+  margin: 0px;
 }
+
 
 .container {
   display: block;
@@ -98,4 +100,16 @@ body {
 
 .col-12 {
   flex:12;
+}
+
+.primary-button {
+  background: #E8F1FF;
+}
+
+.accent-button {
+  background: #FFF5E8;
+}
+
+.warn-button {
+  background: #FFEDE8;
 }

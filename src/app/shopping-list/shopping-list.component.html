@@ -3,7 +3,13 @@
     <div class="col-1">
       <app-shopping-edit></app-shopping-edit>
       <hr>
-      <p>The list</p>
+      <div class="row">
+        <md-list dense>
+          <md-list-item *ngFor="let ingredient of ingredients">
+            <md-checkbox> {{ingredient.name}} * {{ingredient.amount}} </md-checkbox>
+          </md-list-item>
+        </md-list>
+      </div>
     </div>
   </div>
 </div>
