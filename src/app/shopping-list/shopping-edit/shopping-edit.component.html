@@ -1,13 +1,13 @@
 <div class="row">
   <form>
     <md-input-container>
-      <input mdInput placeholder="Name">
+      <input mdInput placeholder="Name" #nameInput>
     </md-input-container>
     <md-input-container>
-      <input mdInput placeholder="Amount">
+      <input mdInput placeholder="Amount" #amountInput>
     </md-input-container>
     <div class="row">
-      <button md-button type="submit" color="primary" class="primary-button">Add</button>
+      <button md-button type="submit" color="primary" class="primary-button" (click)="onAddItem()">Add</button>
       <button md-button color="warn" class="warn-button">Delete</button>
       <button md-button color="accent" class="accent-button">Clears</button>
     </div>
