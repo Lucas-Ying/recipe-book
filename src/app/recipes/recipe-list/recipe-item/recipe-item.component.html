@@ -1,3 +1,9 @@
-<p>
-  recipe-item works!
-</p>
+<a href="#" (click)="onSelected()">
+  <md-list-item class="list-item mat-elevation-z6">
+    <h3 md-line>{{ recipe.name }}</h3>
+    <p md-line class="space-pad"></p>
+    <p md-line>{{ recipe.description }} {{ recipe.description }} {{ recipe.description }}</p>
+    <img [src]="recipe.imagePath"
+         alt="{{ recipe.name }}" class="list-cover">
+  </md-list-item>
+</a>

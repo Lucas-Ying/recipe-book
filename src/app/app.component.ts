@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  loadedNav = 'shopping-list';
+  loadedNav = 'recipe';
 
   onNavigate(navItem: string) {
     this.loadedNav = navItem;

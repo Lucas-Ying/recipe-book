@@ -5,13 +5,10 @@
   <hr>
   <div class="row">
     <md-list>
-      <md-list-item *ngFor="let recipe of recipes" class="list-item mat-elevation-z6">
-        <a md-line href="#"><h3>{{ recipe.name }}</h3></a>
-        <p md-line>{{ recipe.description }} {{ recipe.description }} {{ recipe.description }}</p>
-        <img [src]="recipe.imagePath"
-             alt="{{ recipe.name }}" class="list-cover">
-      </md-list-item>
-      <app-recipe-item></app-recipe-item>
+      <app-recipe-item *ngFor="let recipeElement of recipes"
+                       [recipe]="recipeElement"
+                       (recipeSelected)="onRecipeSelected(recipeElement)">
+      </app-recipe-item>
     </md-list>
   </div>
 
