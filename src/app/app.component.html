@@ -1,6 +1,6 @@
-<app-header></app-header>
+<app-header (navSelected)="onNavigate($event)"></app-header>
 <div class="main">
-  <app-recipes></app-recipes>
-  <app-shopping-list></app-shopping-list>
+  <app-recipes *ngIf="loadedNav === 'recipe'"></app-recipes>
+  <app-shopping-list *ngIf="loadedNav !== 'recipe'"></app-shopping-list>
 </div>
 

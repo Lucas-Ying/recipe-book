@@ -1,7 +1,7 @@
 <md-toolbar color="primary" class="navbar mat-elevation-z6">
   <a href="#" md-button>Recipe Book</a>
-  <a href="#" md-button>Recipes</a>
-  <a href="#" md-button>Shopping List</a>
+  <a href="#" md-button (click)="onSelect('recipe')">Recipes</a>
+  <a href="#" md-button (click)="onSelect('shopping-list')">Shopping List</a>
   <button md-icon-button [mdMenuTriggerFor]="manage" class="align-right">
     <md-icon>more_vert</md-icon>
   </button>
